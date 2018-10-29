@@ -28,11 +28,13 @@ select{
     border-radius: 4px;
     width: 100%;
 }
+/***********generic part ended ***/
 .imgandtitle{
     display: flex;
      align-items:center;
      justify-content: space-between;
 }
+/***********forms part started ***/
 .form-design-all{
     display: flex;
     justify-content: space-around;
@@ -112,6 +114,7 @@ input[type=text] {
     width: 45%;
     padding: 2%;
 }
+/***********social media buttons customization part started ***/
 .fa {
     padding: 20px;
     font-size: 30px;

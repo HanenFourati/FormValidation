@@ -1,4 +1,4 @@
-function validateForm() {
+function validateForm() {  /**check if any field is empty */
     let fn = document.getElementById('fname').value;
     let ln = document.getElementById('lname').value;
     let bd= document.getElementById('birthdate').value;
@@ -36,7 +36,7 @@ function validateForm() {
              alert("Please enter a password");
              return false;} 
 }
-function ckeckPhoneFormat()
+function ckeckPhoneFormat() /**check the given mobiel number format*/
 {   let ph = document.getElementById("mnumber").value;
     let regex=/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/g;
     if (regex.test(ph)==false) {
@@ -44,7 +44,7 @@ function ckeckPhoneFormat()
         return false;} 
 
 }
-function checkmailformat()
+function checkmailformat() /**check the given email address format*/
 {   let em = document.getElementById("email").value;
     let regex2=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (regex2.test(em)==false) {
@@ -52,7 +52,7 @@ function checkmailformat()
         return false;
     } 
 } 
-function checkPasswordup() {
+function checkPasswordup() { /**give a warning message if the given password length excedes the 8 digits at a real time*/
     let pass = document.getElementById("password");
     
     if (pass.value.length <= 7) {
@@ -62,7 +62,7 @@ function checkPasswordup() {
         document.getElementById("warning").innerHTML = " Password length must be less then 8 digit";
     }
 }
-function checkPasswordlength() {
+function checkPasswordlength() { /**check the given password length*/
     let pass = document.getElementById("password");
     if (pass.value.length >= 8) {
         alert("Please enter a valide password length (<8)");
@@ -70,14 +70,14 @@ function checkPasswordlength() {
 
     }
 }
-function checkPasswordformat() {
+function checkPasswordformat() { /**check the given password format*/
     let pass = document.getElementById("password").value;
     let regex3=/^[0-9*.a-z|a-z*.0-9|A-Z]*[A-Z]+[0-9*.a-z|a-z*.0-9|A-Z]*$/;
     if (regex3.test(pass)==false) {
         alert("Please enter a valide password that must be a combination of charatacters , numbers and at least a capital letter");
         return false;} 
 }
-function reset_function() {
+function reset_function() {/**reset the field centant to empty*/
    document.getElementById('fname').value="";
    document.getElementById('lname').value="";
    document.getElementById('birthdate').value="";
@@ -90,7 +90,7 @@ function reset_function() {
    document.getElementById("password").style.backgroundColor="#ffffff";
    document.getElementById("warning").innerHTML="";
 }
-function check_empty_function(){
+function check_empty_function(){ /**check if the login fields section are empty */
     let m = document.getElementById('emailtwo').value;
     let p = document.getElementById('passwordtwo').value;
     if (m == "") {
@@ -102,7 +102,7 @@ function check_empty_function(){
         return false;
     }
 }
-function reset(){
+function reset(){/*reset the login fields section to empty */
     document.getElementById('emailtwo').value="";
    document.getElementById('passwordtwo').value="";
 }

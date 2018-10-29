@@ -1,0 +1,146 @@
+body{
+    background-image: url('nicole-honeywill-416492-unsplash.jpg');
+    background-position: 40% 30%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    
+}
+hr{
+    color:rgba(177, 106, 235);
+}
+img {
+    height: 150px;
+    padding-left: 1%;
+}
+h1{
+    color: rgb(0, 0, 0);
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    width: 56%;
+}
+h2{
+    
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  
+}
+select{
+    background-color:rgba(177, 106, 235, 0.548);
+    border: 1px solid #999;
+    border-radius: 4px;
+    width: 100%;
+}
+.imgandtitle{
+    display: flex;
+     align-items:center;
+     justify-content: space-between;
+}
+.form-design-all{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.form-design-one{
+    background: rgba(255, 255, 255, 0.329);
+    border: 2px solid rgba(255, 255, 255, 0.329) ; 
+    border-radius: 6px;
+   text-align: center;
+    width: 45%;
+   padding: 2%;
+}
+.choice{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+.r1{
+width: 10%;
+align-self: center;
+}
+.r2{
+    width: 10%;   
+}
+input {
+    width: 100%;
+}
+label{
+    float: left;
+}
+input[type=text] {
+    border: 1px solid #999;
+    border-radius: 4px;
+  }
+  input[type=date] {
+    border: 1px solid #999;
+    border-radius: 4px;
+    background-color:rgba(177, 106, 235, 0.548);
+  }
+
+  input[type=tel] {
+    border: 1px solid #999;
+    border-radius: 4px;
+  }
+  input[type=password] {
+    border: 1px solid #999;
+    border-radius: 4px;
+  }
+  input[type=radio] {
+    -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+  outline: none;
+  margin-right: 5px;
+
+  position: relative;
+  top: 4px;
+  }
+  input[type=radio]:checked {
+    border: 6px solid rgba(177, 106, 235);
+  }
+.form-design-two{
+    background: rgba(177, 106, 235, 0.329);
+    border: 2px solid rgba(177, 106, 235, 0.329) ; 
+    border-radius: 6px;
+   text-align: center;
+    width: 45%;
+    padding: 2%;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .footercus{
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+  }
